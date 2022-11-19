@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import React, { Component } from "react";
 import Slider from "react-slick";
+import "./SlickSlider.css";
 // import prevarrowwhite from "./image/arrow-right.png";
 // import nextarrowwhite from "./image/arrow-right.png";
 
@@ -162,25 +163,27 @@ class SlickSlider extends Component {
     };
 
     return (
-      <Container>
-        <StyledSlider {...settings}>
-          {items.map((item) => {
-            return (
-              <div key={item.id}>
-                <ImageContainer>
-                  <BannerText>
-                    <BannerText4> {item.text4} </BannerText4>
-                    <BannerText1> {item.text1} </BannerText1>
-                    <BannerText2> {item.text2} </BannerText2>
-                    <BannerText3> {item.text3} </BannerText3>
-                  </BannerText>
-                  <Image src={item.url} />
-                </ImageContainer>
-              </div>
-            );
-          })}
-        </StyledSlider>
-      </Container>
+      <div className="ComponentBox">
+        <Container>
+          <StyledSlider {...settings}>
+            {items.map((item) => {
+              return (
+                <div key={item.id}>
+                  <ImageContainer>
+                    <BannerText>
+                      <BannerText4> {item.text4} </BannerText4>
+                      <BannerText1> {item.text1} </BannerText1>
+                      <BannerText2> {item.text2} </BannerText2>
+                      <BannerText3> {item.text3} </BannerText3>
+                    </BannerText>
+                    <Image src={item.url} />
+                  </ImageContainer>
+                </div>
+              );
+            })}
+          </StyledSlider>
+        </Container>
+      </div>
     );
   }
 }

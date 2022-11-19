@@ -10,226 +10,284 @@ class Explain extends Component {
   render() {
     return (
       <div>
-        {/* <div className="Background"></div> */}
-        {/* 1 */}
-        <div className="pt-20 pb-10">
+        <div className="background">
           <div
-            class="border-4 border-white ml-20
-         bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+            className="
+            grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2"
+            // md:grid grid-rows-1"
           >
-            <div class="px-3 border-4 border-white md:flex h-56 grid grid-cols-2 gap-auto content-around ...">
-              <div class="border-4 border-white md:shrink-0 p-2">
-                <img
-                  class="h-48 w-full object-cover sw:h-full sw:w-48"
-                  src={Ex1}
-                  alt="MCT explain 1"
-                />
-              </div>
-              {/* <div class="pl-7"> */}
-              <div class="pb-0">
-                <div className="pt-5 h-40 px-8 border-4 border-white">
-                  <div className="pt-2 border-4 border-white uppercase tracking-wide text-2xl text-black font-bold">
-                    MCT
+            {/* 1 */}
+            <div className="xl:pl-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-start">
+              <div
+                class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
+            sm:max-w-md mx-auto bg-white rounded-xl shadow-md
+            overflow-hidden md:max-w-xl"
+              >
+                <div class="md:flex mx-0 sm:mx-3">
+                  <div class="md:shrink-0 p-10 sm:p-7">
+                    <img
+                      class="h-full w-full object-cover md:w-52 md:h-full sm:w-full sm:h-48 "
+                      src={Ex1}
+                      alt="Modern building architecture"
+                    />
                   </div>
-                  <div className="border-4 border-white">
-                    <p class="mt-2 text-slate-500">
+                  <div
+                    class="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
+                md:pt-5 lg:pt-5 lx:pt-5"
+                  >
+                    <div className="border-4 border-white"></div>
+                    <h1
+                      class="block mt-1 text-center sm:text-center md:text-left lg:text-left lx:text-left
+                    text-2xl font-bold leading-tight font-medium text-black "
+                    >
+                      MCT
+                    </h1>
+                    <p class="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left lx:text-left">
                       MCT는
                       <br />
                       자동차 부품을 생산하는
                       <br />
                       자동차 부품 전문회사입니다.
                     </p>
-                  </div>
-                </div>
-                <div className="buttoninner1">
-                  <div className="py-0 px-3">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full inline-flex item-center">
-                      <span>자세히 보기 </span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-6 h-6"
+                    <div
+                      className="ml-0 sm:ml-12 pl-11 w-60 border-4 border-white pt-1
+                  sm:pt-0 sm:pl-11 md:pl-0 lg:pl-0 lx:pl-0"
+                    >
+                      <div
+                        className="border-4 border-white p-0 pl-4
+                    sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
+                    sm:pl-5 md:pl-11 lg:pl-11 lx:pl-11"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                        />
-                      </svg>
-                    </button>
+                        <button
+                          className="bg-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                        font-bold py-3 px-4 rounded-full inline-flex item-center"
+                        >
+                          <span>자세히 보기 </span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-6 h-6"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* 2 */}
-        <div className="border-4 border-black pt-10 pb-10">
-          <div
-            class="border-4 border-white pt-10 pb-10
-         bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-          >
-            <div class="px-3 border-4 border-white md:flex h-56 grid grid-cols-2 gap-auto content-around ...">
-              <div class="border-4 border-white md:shrink-0 p-2">
-                <img
-                  class="h-48 w-full object-cover sw:h-full sw:w-48"
-                  src={Ex2}
-                  alt="MCT explain 2"
-                />
-              </div>
-              {/* <div class="pl-7"> */}
-              <div class="pb-0">
-                <div className="pt-5 h-40 px-8 border-4 border-white">
-                  <div className="pt-2 border-4 border-white uppercase tracking-wide text-2xl text-black font-bold">
-                    고객 만족 기업
+            {/* 2 */}
+            <div className="xl:pr-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-end">
+              <div
+                class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
+            sm:max-w-md mx-auto bg-white rounded-xl shadow-md
+            overflow-hidden md:max-w-xl"
+              >
+                <div class="md:flex mx-0 sm:mx-3">
+                  <div class="md:shrink-0 p-10 sm:p-7">
+                    <img
+                      class="h-full w-full object-cover md:w-52 md:h-full sm:w-full sm:h-48 "
+                      src={Ex2}
+                      alt="MCT explain2"
+                    />
                   </div>
-                  <div className="border-4 border-white">
-                    <p class="mt-2 text-slate-500">
+                  <div
+                    class="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
+                md:pt-5 lg:pt-5 lx:pt-5"
+                  >
+                    <div className="border-4 border-white"></div>
+                    <h1
+                      class="block mt-1 text-center sm:text-center md:text-left lg:text-left lx:text-left
+                    text-2xl font-bold leading-tight font-medium text-black "
+                    >
+                      고객 만족 기업
+                    </h1>
+                    <p class="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left lx:text-left">
                       품질보증시스템을 갖추어
                       <br />
                       고객이 만족하는 기업의 역할을
                       <br />
                       다하겠습니다.
                     </p>
-                  </div>
-                </div>
-                <div className="buttoninner1">
-                  <div className="py-0 px-3">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full inline-flex item-center">
-                      <span>자세히 보기 </span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-6 h-6"
+                    <div
+                      className="ml-0 sm:ml-12 pl-11 w-60 border-4 border-white pt-1
+                  sm:pt-0 sm:pl-11 md:pl-0 lg:pl-0 lx:pl-0"
+                    >
+                      <div
+                        className="border-4 border-white p-0 pl-4
+                    sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
+                    sm:pl-5 md:pl-11 lg:pl-11 lx:pl-11"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                        />
-                      </svg>
-                    </button>
+                        <button
+                          className="bg-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                        font-bold py-3 px-4 rounded-full inline-flex item-center"
+                        >
+                          <span>자세히 보기 </span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-6 h-6"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* 3 */}
-        <div className="pt-10 pb-10">
-          <div
-            class="border-4 border-white mx-20
-         bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-          >
-            <div class="px-3 border-4 border-white md:flex h-56 grid grid-cols-2 gap-auto content-around ...">
-              <div class="border-4 border-white md:shrink-0 p-2">
-                <img
-                  class="h-48 w-full object-cover sw:h-full sw:w-48"
-                  src={Ex3}
-                  alt="MCT explain 3"
-                />
-              </div>
-              {/* <div class="pl-7"> */}
-              <div class="pb-0">
-                <div className="pt-5 h-40 px-8 border-4 border-white">
-                  <div className="pt-2 border-4 border-white uppercase tracking-wide text-2xl text-black font-bold">
-                    PRODUCT
+            {/* 3 */}
+            <div className="xl:pl-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-start">
+              <div
+                class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
+            sm:max-w-md mx-auto bg-white rounded-xl shadow-md
+            overflow-hidden md:max-w-xl"
+              >
+                <div class="md:flex mx-0 sm:mx-3">
+                  <div class="md:shrink-0 p-10 sm:p-7">
+                    <img
+                      class="h-full w-full object-cover md:w-52 md:h-full sm:w-full sm:h-48 "
+                      src={Ex3}
+                      alt="MCT explain3"
+                    />
                   </div>
-                  <div className="border-4 border-white">
-                    <p class="mt-2 text-slate-500">
+                  <div
+                    class="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
+                md:pt-5 lg:pt-5 lx:pt-5"
+                  >
+                    <div className="border-4 border-white"></div>
+                    <h1
+                      class="block mt-1 text-center sm:text-center md:text-left lg:text-left lx:text-left
+                    text-2xl font-bold leading-tight font-medium text-black "
+                    >
+                      PRODUCT
+                    </h1>
+                    <p class="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left lx:text-left">
                       특허등록 생산제품 외 다양한 생산설비와
                       <br />
                       측정검사설비 등 최고의 제품들이
                       <br />
                       갖추어져있습니다.
                     </p>
-                  </div>
-                </div>
-                <div className="buttoninner1">
-                  <div className="py-0 px-3">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full inline-flex item-center">
-                      <span>자세히 보기 </span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-6 h-6"
+                    <div
+                      className="ml-0 sm:ml-12 pl-11 w-60 border-4 border-white pt-1
+                  sm:pt-0 sm:pl-11 md:pl-0 lg:pl-0 lx:pl-0"
+                    >
+                      <div
+                        className="border-4 border-white p-0 pl-4
+                    sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
+                    sm:pl-5 md:pl-11 lg:pl-11 lx:pl-11"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                        />
-                      </svg>
-                    </button>
+                        <button
+                          className="bg-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                        font-bold py-3 px-4 rounded-full inline-flex item-center"
+                        >
+                          <span>자세히 보기 </span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-6 h-6"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* 4 */}
-        <div className="pt-10 pb-10">
-          <div
-            class="border-4 border-white mx-auto
-         bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-          >
-            <div class="px-3 border-4 border-white md:flex h-56 grid grid-cols-2 gap-auto content-around ...">
-              <div class="border-4 border-white md:shrink-0 p-2">
-                <img
-                  class="h-48 w-full object-cover sw:h-full sw:w-48"
-                  src={Ex4}
-                  alt="MCT explain 4"
-                />
-              </div>
-              {/* <div class="pl-7"> */}
-              <div class="flex flex-col space-y-3">
-                <div className="h-40 px-8 border-4 border-white">
-                  <div className="pt-2 border-4 border-white uppercase tracking-wide text-2xl text-black font-bold">
-                    충분한 경쟁력의
-                    <br />
-                    Global 전문 업체
+            {/* 4 */}
+            <div className="xl:pr-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-end">
+              <div
+                class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
+            sm:max-w-md mx-auto bg-white rounded-xl shadow-md
+            overflow-hidden md:max-w-xl"
+              >
+                <div class="md:flex mx-0 sm:mx-3">
+                  <div class="md:shrink-0 p-10 sm:p-7">
+                    <img
+                      class="h-full w-full object-cover md:w-52 md:h-full sm:w-full sm:h-48 "
+                      src={Ex4}
+                      alt="MCT explain4"
+                    />
                   </div>
-                  <div className="border-4 border-white">
-                    <p class="mt-2 text-slate-500">
+                  <div
+                    class="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
+                md:pt-5 lg:pt-5 lx:pt-5"
+                  >
+                    <div className="border-4 border-white"></div>
+                    <h1
+                      class="block mt-1 text-center sm:text-center md:text-left lg:text-left lx:text-left
+                    text-2xl font-bold leading-tight font-medium text-black "
+                    >
+                      충분한 경쟁력의
+                      <br /> GLOBAL 전문 업체
+                    </h1>
+                    <p class="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left lx:text-left">
                       국내를 넘어 전 세계를 향해 나아가는
                       <br />
                       세계적 자동차 부품 생산 전문 기업으로
                       <br />
                       성장합니다.
                     </p>
-                  </div>
-                </div>
-                <div className="buttoninner">
-                  <div className="py-0 px-3">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full inline-flex item-center">
-                      <span>자세히 보기 </span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-6 h-6"
+                    <div
+                      className="ml-0 sm:ml-12 pl-11 w-60 border-4 border-white pt-1
+                  sm:pt-0 sm:pl-11 md:pl-0 lg:pl-0 lx:pl-0"
+                    >
+                      <div
+                        className="border-4 border-white p-0 pl-4
+                    sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
+                    sm:pl-5 md:pl-11 lg:pl-11 lx:pl-11"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                        />
-                      </svg>
-                    </button>
+                        <button
+                          className="bg-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                        font-bold py-3 px-4 rounded-full inline-flex item-center"
+                        >
+                          <span>자세히 보기 </span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-6 h-6"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

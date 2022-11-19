@@ -1,12 +1,12 @@
 import { Component } from "react";
-class Contact extends Component {
+class Road extends Component {
   render() {
     return (
       <div>
-        <h1>공지사항</h1>
+        <h1>오시는 길</h1>
       </div>
     );
   }
 }
 
-export default Contact;
+export default Road;

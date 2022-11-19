@@ -10,11 +10,10 @@ class App extends Component {
     return (
       <Router>
         <NavBar />
-        <div className="container">
+        <div>
           <Routes>
             <Route path="/" element={<Home />} exact />
             <Route path="/contact" element={<ContactForm />} />
-            {/* <Route path="/dropdown" element={<DropDown />} /> */}
           </Routes>
         </div>
       </Router>

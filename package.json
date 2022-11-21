@@ -18,6 +18,7 @@
     "react-slick": "^0.29.0",
     "sass": "^1.56.1",
     "slick-carousel": "^1.8.1",
+    "sticky-sidebar": "^3.3.1",
     "styled-components": "^5.3.6",
     "swiper": "^6.8.4",
     "web-vitals": "^2.1.4"

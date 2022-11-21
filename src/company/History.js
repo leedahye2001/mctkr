@@ -1,9 +1,13 @@
 import { Component } from "react";
+import Footer from "../components/Footer";
+import HistorySide from "../components/HistorySide";
+
 class History extends Component {
   render() {
     return (
       <div>
-        <h1>회사연혁</h1>
+        <HistorySide />
+        <Footer />
       </div>
     );
   }

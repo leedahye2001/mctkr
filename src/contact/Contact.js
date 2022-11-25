@@ -3,7 +3,7 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <h1>공지사항</h1>
+        <h1>온라인 문의</h1>
       </div>
     );
   }

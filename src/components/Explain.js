@@ -17,11 +17,14 @@ class Explain extends Component {
             // md:grid grid-rows-1"
           >
             {/* 1 */}
+            
             <div className="xl:pl-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-start">
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
-            overflow-hidden md:max-w-xl"
+            overflow-hidden md:max-w-xl
+            transition ease-in-out delay-150 hover:translate hover:scale-110 duration-300"
+              
               >
                 <div class="md:flex mx-0 sm:mx-3">
                   <div class="md:shrink-0 p-10 sm:p-7">
@@ -56,10 +59,11 @@ class Explain extends Component {
                       <div
                         className="border-4 border-white p-0 pl-4
                     sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
-                    sm:pl-5 md:pl-11 lg:pl-11 lx:pl-11"
+                    sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
                       >
+                        <a href="/introduce">
                         <button
-                          className="bg-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                          className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
                         font-bold py-3 px-4 rounded-full inline-flex item-center"
                         >
                           <span>자세히 보기 </span>
@@ -78,6 +82,7 @@ class Explain extends Component {
                             />
                           </svg>
                         </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -86,11 +91,13 @@ class Explain extends Component {
             </div>
 
             {/* 2 */}
+            <a href="/introduce">
             <div className="xl:pr-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-end">
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
-            overflow-hidden md:max-w-xl"
+            overflow-hidden md:max-w-xl
+            transition ease-in-out delay-150 hover:translate hover:scale-110 duration-300"
               >
                 <div class="md:flex mx-0 sm:mx-3">
                   <div class="md:shrink-0 p-10 sm:p-7">
@@ -102,7 +109,7 @@ class Explain extends Component {
                   </div>
                   <div
                     class="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
-                md:pt-5 lg:pt-5 lx:pt-5"
+                md:pt-5 lg:pt-5"
                   >
                     <div className="border-4 border-white"></div>
                     <h1
@@ -120,15 +127,16 @@ class Explain extends Component {
                     </p>
                     <div
                       className="ml-0 sm:ml-12 pl-11 w-60 border-4 border-white pt-1
-                  sm:pt-0 sm:pl-11 md:pl-0 lg:pl-0 lx:pl-0"
+                  sm:pt-0 sm:pl-11 md:pl-0"
                     >
                       <div
                         className="border-4 border-white p-0 pl-4
-                    sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
-                    sm:pl-5 md:pl-11 lg:pl-11 lx:pl-11"
+                    sm:pt-2 md:p-0 lg:p-0 xl:p-0 md:ml-0 sm:m-3
+                    sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
                       >
+                        <a href="/introduce">
                         <button
-                          className="bg-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                          className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
                         font-bold py-3 px-4 rounded-full inline-flex item-center"
                         >
                           <span>자세히 보기 </span>
@@ -147,19 +155,23 @@ class Explain extends Component {
                             />
                           </svg>
                         </button>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            </a>
 
             {/* 3 */}
+           
             <div className="xl:pl-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-start">
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
-            overflow-hidden md:max-w-xl"
+            overflow-hidden md:max-w-xl
+            transition ease-in-out delay-150 hover:translate hover:scale-110 duration-300"
               >
                 <div class="md:flex mx-0 sm:mx-3">
                   <div class="md:shrink-0 p-10 sm:p-7">
@@ -171,7 +183,7 @@ class Explain extends Component {
                   </div>
                   <div
                     class="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
-                md:pt-5 lg:pt-5 lx:pt-5"
+                md:pt-5"
                   >
                     <div className="border-4 border-white"></div>
                     <h1
@@ -189,15 +201,16 @@ class Explain extends Component {
                     </p>
                     <div
                       className="ml-0 sm:ml-12 pl-11 w-60 border-4 border-white pt-1
-                  sm:pt-0 sm:pl-11 md:pl-0 lg:pl-0 lx:pl-0"
+                  sm:pt-0 sm:pl-11 md:pl-0"
                     >
                       <div
                         className="border-4 border-white p-0 pl-4
                     sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
-                    sm:pl-5 md:pl-11 lg:pl-11 lx:pl-11"
+                    sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
                       >
+                         <a href="/product">
                         <button
-                          className="bg-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                          className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
                         font-bold py-3 px-4 rounded-full inline-flex item-center"
                         >
                           <span>자세히 보기 </span>
@@ -216,6 +229,7 @@ class Explain extends Component {
                             />
                           </svg>
                         </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -224,11 +238,13 @@ class Explain extends Component {
             </div>
 
             {/* 4 */}
+            
             <div className="xl:pr-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-end">
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
-            overflow-hidden md:max-w-xl"
+            overflow-hidden md:max-w-xl
+            transition ease-in-out delay-150 hover:translate hover:scale-110 duration-300"
               >
                 <div class="md:flex mx-0 sm:mx-3">
                   <div class="md:shrink-0 p-10 sm:p-7">
@@ -263,11 +279,12 @@ class Explain extends Component {
                     >
                       <div
                         className="border-4 border-white p-0 pl-4
-                    sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
-                    sm:pl-5 md:pl-11 lg:pl-11 lx:pl-11"
+                    sm:pt-2 md:p-0 md:ml-0 sm:m-3
+                    sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
                       >
+                        <a href="/introduce">
                         <button
-                          className="bg-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                          className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
                         font-bold py-3 px-4 rounded-full inline-flex item-center"
                         >
                           <span>자세히 보기 </span>
@@ -286,6 +303,7 @@ class Explain extends Component {
                             />
                           </svg>
                         </button>
+                        </a>
                       </div>
                     </div>
                   </div>

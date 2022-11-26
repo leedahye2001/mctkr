@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import DropDown from "./components/Dropdown";
 import ContactForm from "./contact/ContactForm";
 import History from "./company/History";
 import Introduce from "./company/Introduce";

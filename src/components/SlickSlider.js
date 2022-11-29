@@ -63,44 +63,6 @@ const StyledSlider = styled(Slider)`
 //   height: 14px;
 // `;
 
-export const BannerText = styled.div`
-  position: absolute;
-  text-align: center;
-  color: black;
-  opacity: 0.8;
-`;
-
-export const BannerText4 = styled.div`
-  font-size: 20px;
-`;
-
-export const BannerText1 = styled.div`
-  font-size: 50px;
-  margin-bottom: 15;
-  font-weight: 700;
-`;
-
-export const BannerText2 = styled.div`
-  font-size: 50px;
-  margin-bottom: 15;
-  font-weight: 700;
-`;
-
-export const BannerText3 = styled.div`
-  font-size: 50px;
-  margin-bottom: 15;
-  font-weight: 700;
-`;
-
-export const ImageContainer = styled.div`
-  margin: 0 16px;
-`;
-
-export const Image = styled.img`
-  max-width: 100%;
-  max-height: 100%;
-`;
-
 const items = [
   {
     id: 1,
@@ -169,15 +131,25 @@ class SlickSlider extends Component {
             {items.map((item) => {
               return (
                 <div key={item.id}>
-                  <ImageContainer>
-                    <BannerText>
-                      <BannerText4> {item.text4} </BannerText4>
-                      <BannerText1> {item.text1} </BannerText1>
-                      <BannerText2> {item.text2} </BannerText2>
-                      <BannerText3> {item.text3} </BannerText3>
-                    </BannerText>
-                    <Image src={item.url} />
-                  </ImageContainer>
+                  <div className="my-0 mx-3">
+                    <div className="absolute justify-items-center align-center text-black opacity-0.8">
+                      <div className="font-sm">{item.text4}</div>
+                      <div className="font-black mb-10 text-2xl">
+                        {item.text1}
+                      </div>
+                      <div className="font-black mb-10 text-2xl">
+                        {item.text2}
+                      </div>
+                      <div className="font-black mb-10 text-2xl">
+                        {item.text3}
+                      </div>
+                    </div>
+                    <img
+                      src={item.url}
+                      className="object-cover h-[500px] lg:h-full w-full"
+                      alt="MCT 메인 배너 사진 3가지"
+                    />
+                  </div>
                 </div>
               );
             })}
@@ -189,3 +161,28 @@ class SlickSlider extends Component {
 }
 
 export default SlickSlider;
+
+{
+  /* <div class="slide slide_02 slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="width: 1440px;">
+                    <div class="main_title">
+                        <div class="border_box">
+                            <div class="border_box">
+                                <div class="border_left_box">
+                                <img src="http://smartkor.kr/theme/smartkorea/contents/img/title_left.png">
+                                </div>
+                                <div class="border_right_box">
+                                <img src="http://smartkor.kr/theme/smartkorea/contents/img/title_right.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_text_box">
+                            <div class="main_text_top font_noto">
+                                <span>신뢰성 높은 품질의 제품!</span>
+                            </div>
+                            <div class="main_text_bottom">
+                                <span><span class="bold">SMART</span>KOREA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> */
+}

@@ -17,14 +17,17 @@ class Explain extends Component {
             // md:grid grid-rows-1"
           >
             {/* 1 */}
-            
-            <div className="xl:pl-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-start">
+            <div
+              className="xl:pl-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-start"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
             overflow-hidden md:max-w-xl
             transition ease-in-out delay-150 hover:translate hover:scale-110 duration-300"
-              
               >
                 <div class="md:flex mx-0 sm:mx-3">
                   <div class="md:shrink-0 p-10 sm:p-7">
@@ -62,26 +65,26 @@ class Explain extends Component {
                     sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
                       >
                         <a href="/introduce">
-                        <button
-                          className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                          <button
+                            className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
                         font-bold py-3 px-4 rounded-full inline-flex item-center"
-                        >
-                          <span>자세히 보기 </span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="w-6 h-6"
                           >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                            />
-                          </svg>
-                        </button>
+                            <span>자세히 보기 </span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="w-6 h-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                              />
+                            </svg>
+                          </button>
                         </a>
                       </div>
                     </div>
@@ -91,8 +94,12 @@ class Explain extends Component {
             </div>
 
             {/* 2 */}
-            <a href="/introduce">
-            <div className="xl:pr-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-end">
+            <div
+              className="xl:pr-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-end"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
@@ -135,26 +142,26 @@ class Explain extends Component {
                     sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
                       >
                         <a href="/introduce">
-                        <button
-                          className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                          <button
+                            className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
                         font-bold py-3 px-4 rounded-full inline-flex item-center"
-                        >
-                          <span>자세히 보기 </span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="w-6 h-6"
                           >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                            />
-                          </svg>
-                        </button>
+                            <span>자세히 보기 </span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="w-6 h-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                              />
+                            </svg>
+                          </button>
                         </a>
                       </div>
                     </div>
@@ -162,11 +169,14 @@ class Explain extends Component {
                 </div>
               </div>
             </div>
-            </a>
 
             {/* 3 */}
-           
-            <div className="xl:pl-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-start">
+            <div
+              className="xl:pl-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-start"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
@@ -208,27 +218,27 @@ class Explain extends Component {
                     sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
                     sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
                       >
-                         <a href="/product">
-                        <button
-                          className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                        <a href="/product">
+                          <button
+                            className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
                         font-bold py-3 px-4 rounded-full inline-flex item-center"
-                        >
-                          <span>자세히 보기 </span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="w-6 h-6"
                           >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                            />
-                          </svg>
-                        </button>
+                            <span>자세히 보기 </span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="w-6 h-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                              />
+                            </svg>
+                          </button>
                         </a>
                       </div>
                     </div>
@@ -238,8 +248,12 @@ class Explain extends Component {
             </div>
 
             {/* 4 */}
-            
-            <div className="xl:pr-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-end">
+            <div
+              className="xl:pr-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-end"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
@@ -283,26 +297,26 @@ class Explain extends Component {
                     sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
                       >
                         <a href="/introduce">
-                        <button
-                          className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
+                          <button
+                            className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
                         font-bold py-3 px-4 rounded-full inline-flex item-center"
-                        >
-                          <span>자세히 보기 </span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="w-6 h-6"
                           >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                            />
-                          </svg>
-                        </button>
+                            <span>자세히 보기 </span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="w-6 h-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                              />
+                            </svg>
+                          </button>
                         </a>
                       </div>
                     </div>

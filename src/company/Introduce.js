@@ -25,9 +25,9 @@ class Introduce extends Component {
 
         <div className="flex flex-rows-1 ">
           {/* left sidemenu */}
-          <div
-            className="invisible sm:invisible md:invisible lg:visible xl:visible
-                      pl-10 sm:pl-10 lg:w-[250px] xl:w-[250px] w-0 md:w-70 sm:w-0
+          {/* <div
+            className="invisible sm:invisible md:visible lg:visible xl:visible
+                      pl-10 sm:pl-10 md:w-[400px] w-0 lg:w-70 sm:w-0
                       h-[400px] sticky top-40 text-blue-900"
           >
             <span className=" text-2xl font-bold">COMPANY</span>
@@ -40,53 +40,68 @@ class Introduce extends Component {
             <br />
             <br />
             <a href="/history">
-              <span className="text-gray-400 text-xl hover:text-blue-900 transition duration-500 ease-in-out">
+              <span className="text-netural-400 text-xl font-light hover:font-normal hover:text-blue-900 transition duration-500 ease-in-out">
                 회사연혁
               </span>
             </a>
             <br />
             <br />
             <a href="/license">
-              <span className="text-gray-400 text-xl hover:text-blue-900 transition duration-500 ease-in-out">
+              <span className="text-netural-400 text-xl font-light hover:font-normal hover:text-blue-900 transition duration-500 ease-in-out">
                 특허 및 인증현황
               </span>
             </a>
             <br />
             <br />
             <a href="/road">
-              <span className="text-gray-400 text-xl hover:text-blue-900 transition duration-500 ease-in-out">
-                오시는 길
+              <span className="text-netural-400 text-xl font-light hover:font-normal hover:text-blue-900 transition duration-500 ease-in-out">
+                조직도
               </span>
             </a>
-          </div>
+          </div> */}
 
           {/* Main contect */}
-          <div className="pl-0 sm:pl-0 w-full h-full pr-10 sm:pr-10 md:pl-0 lg:pl-0 xl:pl-10">
+          <div className="px-10 sm:px-10 w-full h-full">
+            <span className="text-black text-3xl sm:text-4xl font-black sm:font-black">
+              회사소개
+            </span>
+            <hr className="mt-10 mb-20 h-px border-2 w-1/3 bg-black border-black" />
             <span className="text-black text-3xl sm:text-4xl font-semibold">
               CEO 인사말
             </span>
             <img src={ceo} className="pt-10 w-full" alt="CEO 인사말" />
             <hr class="my-20 h-px bg-gray-200 border-0"></hr>
-            <span className="text-black text-3xl sm:text-4xl font-semibold">
-              회사개요
-            </span>
-            <br />
-            <div className="pt-10"></div>
-            <span className="text-black text-xl sm:text-2xl font-semibold">
-              회사명 : (주)엠씨티
-            </span>
-            <br />
-            <span className="text-black text-xl sm:text-2xl font-semibold">
-              Motorcar Componentry Technology
-            </span>
-            <br />
-            <br />
-            <span className="text-gray-600 text-lg sm:text-2xl sm:text-2xl font-semibold">
-              "엠씨티는 자동차용 부품을 생산하는 자동차 부품 전문회사입니다”
-            </span>
-            <img src={location} className="pt-20 w-3/4" alt="MCT 위치" />
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <span className="text-black text-3xl sm:text-4xl font-semibold">
+                회사개요
+              </span>
+              <br />
+              <div className="pt-10"></div>
+              <span className="text-black text-xl sm:text-2xl font-semibold">
+                회사명 : (주)엠씨티
+              </span>
+              <br />
+              <span className="text-black text-xl sm:text-2xl font-semibold">
+                Motorcar Componentry Technology
+              </span>
+              <br />
+              <br />
+              <span className="text-gray-600 text-lg sm:text-2xl sm:text-2xl font-semibold">
+                "엠씨티는 자동차용 부품을 생산하는 자동차 부품 전문회사입니다”
+              </span>
+              <img src={location} className="pt-20 w-3/4" alt="MCT 위치" />
+            </div>
             <div className="pt-20"></div>
-            <table className="table-auto w-full text-sm sm:text-base lg:text-base md:text-base xl:text-base text-center font-semibold">
+            <table
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              className="table-auto w-full text-sm sm:text-base lg:text-base md:text-base xl:text-base text-center font-semibold"
+            >
               <tbody>
                 <tr>
                   <td className="bg-black/[.08] p-4 shadow-md">설립일</td>
@@ -125,38 +140,53 @@ class Introduce extends Component {
               </tbody>
             </table>
             <hr class="my-20 h-px bg-gray-200 border-0"></hr>
-            <span className="text-black text-3xl sm:text-4xl font-semibold">
-              회사 전경 및 공장 내부
-            </span>
-            <br />
-            <div className="pt-10"></div>
-            <img
-              src={mct_entire1}
-              className="pb-5 w-full"
-              alt="MCT 회사 전경"
-            />
-            <span className="pl-[38%] sm:pl-[43%] xl:pl-[46%] text-black/[.80] text-base sm:text-xl font-semibold">
-              [ 회사 전경 ]
-            </span>
-            <div className="pt-5"></div>
-            <img src={cnc} className="pt-10 pb-5 w-full" alt="MCT 회사 전경" />
-            <span className="pl-[6%] sm:pl-[11.5%] xl:pl-[20%] text-black/[.80] text-base sm:text-xl font-semibold">
-              [ 절단, 면취 가공 ]
-            </span>
-            <span className="pl-[18%] sm:pl-[29%] xl:pl-[43%] text-black/[.80] text-base sm:text-xl font-semibold">
-              [ CNC 가공 ]
-            </span>
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <span className="text-black text-3xl sm:text-4xl font-semibold">
+                회사 전경 및 공장 내부
+              </span>
+              <br />
+              <div className="pt-10"></div>
+              <img
+                src={mct_entire1}
+                className="pb-5 w-full"
+                alt="MCT 회사 전경"
+              />
+              <span className="pl-[38%] sm:pl-[43%] xl:pl-[46%] text-black/[.80] text-base sm:text-xl font-semibold">
+                [ 회사 전경 ]
+              </span>
+              <div className="pt-5"></div>
+              <img
+                src={cnc}
+                className="pt-10 pb-5 w-full"
+                alt="MCT 회사 전경"
+              />
+              <span className="pl-[6%] sm:pl-[11.5%] xl:pl-[20%] text-black/[.80] text-base sm:text-xl font-semibold">
+                [ 절단, 면취 가공 ]
+              </span>
+              <span className="pl-[18%] sm:pl-[29%] xl:pl-[43%] text-black/[.80] text-base sm:text-xl font-semibold">
+                [ CNC 가공 ]
+              </span>
+            </div>
             <hr class="my-20 h-px bg-gray-200 border-0"></hr>
-            <span className="text-black text-3xl sm:text-4xl font-semibold">
-              조직도
-            </span>
-            <br />
-
-            <img
-              src={organization_chart}
-              className="pt-10 w-full lg:ml-[15%] sm:w-full md:w-full lg:w-2/3"
-              alt="MCT 조직도"
-            />
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <span className="text-black text-3xl sm:text-4xl font-semibold">
+                조직도
+              </span>
+              <br />
+              <img
+                src={organization_chart}
+                className="pt-10 w-full lg:ml-[15%] sm:w-full md:w-full lg:w-2/3"
+                alt="MCT 조직도"
+              />
+            </div>
             <div className="py-10"></div>
           </div>
         </div>

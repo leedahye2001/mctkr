@@ -14,7 +14,7 @@ class History extends Component {
           <div className="pl-2"></div>
           <img src={rightarrow} className="pt-1 h-5 w-5" alt="rightarrow" />
           <div className="pl-2"></div>
-          <span className="font-bold">연혁</span>
+          <span className="font-bold">회사연혁</span>
         </div>
       </div>
     );

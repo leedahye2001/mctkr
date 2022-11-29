@@ -5,7 +5,12 @@ class Sales extends Component {
   render() {
     return (
       <div>
-        <div class="animate-fade-in-down pl-10 lg:grid grid-cols-2 gap-0 p-2 ml:grid grid-cols-2 gap-0 p-1 sm:grid grid-cols-2 gap-2 pt-10 pb-5">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+          class="animate-fade-in-down pl-10 lg:grid grid-cols-2 gap-0 p-2 ml:grid grid-cols-2 gap-0 p-1 sm:grid grid-cols-2 gap-2 pt-10 pb-5"
+        >
           {/* <div className="EntirePadding3"> */}
           <div>
             <img

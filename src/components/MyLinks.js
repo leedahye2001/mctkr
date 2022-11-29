@@ -36,15 +36,15 @@ export const links = [
       {
         Head: "사업영역 및 소개",
         sublink: [
-          { name: "사업영역", link: "/company" },
-          { name: "사업소개", link: "/company" },
+          { name: "사업영역", link: "/area" },
+          { name: "사업소개", link: "/area" },
         ],
       },
       {
         Head: "주요 거래선",
         sublink: [
-          { name: "Car Makers", link: "/history" },
-          { name: "Tier-1", link: "/history" },
+          { name: "Car Makers", link: "/majorcustomer" },
+          { name: "Tier-1", link: "/majorcustomer" },
         ],
       },
     ],
@@ -55,15 +55,15 @@ export const links = [
     sublinks: [
       {
         Head: "제품소개",
-        sublink: [{ name: "주요 생산품", link: "/company" }],
+        sublink: [{ name: "주요 생산품", link: "/productintro" }],
       },
       {
         Head: "생산설비",
-        sublink: [{ name: "생산설비", link: "/history" }],
+        sublink: [{ name: "생산설비", link: "/productionline" }],
       },
       {
         Head: "측정검사설비",
-        sublink: [{ name: "측정검사설비", link: "/company" }],
+        sublink: [{ name: "측정검사설비", link: "/measurementfacility" }],
       },
     ],
   },
@@ -73,7 +73,7 @@ export const links = [
     sublinks: [
       {
         Head: "뉴스",
-        sublink: [{ name: "뉴스 및 보도자료", link: "/company" }],
+        sublink: [{ name: "뉴스 및 보도자료", link: "/news" }],
       },
     ],
   },
@@ -83,11 +83,11 @@ export const links = [
     sublinks: [
       {
         Head: "CUSTOMER",
-        sublink: [{ name: "공지사항", link: "/company" }],
+        sublink: [{ name: "공지사항", link: "/customer" }],
       },
       {
         Head: "CONTACT",
-        sublink: [{ name: "온라인 문의", link: "/history" }],
+        sublink: [{ name: "온라인 문의", link: "/contact" }],
       },
     ],
   },

@@ -11,6 +11,10 @@ import Majorcustomer from "./business/MajorCustomer";
 import Home from "./pages/Home";
 import ProductIntro from "./product/ProductIntro";
 import ProductionLine from "./product/ProductionLine";
+import Customer from "./customer/Customer";
+import News from "./news/News";
+import Login from "./sign/Login";
+import SignUp from "./sign/SignUp";
 import MeasurementFacility from "./product/MeasurementFacility";
 
 class App extends Component {
@@ -30,10 +34,14 @@ class App extends Component {
             <Route path="/majorcustomer" element={<Majorcustomer />} />
             <Route path="/productintro" element={<ProductIntro />} />
             <Route path="/productionline" element={<ProductionLine />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/customer" element={<Customer />} />
             <Route
               path="/measurementfacility"
               element={<MeasurementFacility />}
             />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
           </Routes>
         </div>
       </Router>

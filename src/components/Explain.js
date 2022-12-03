@@ -17,57 +17,46 @@ class Explain extends Component {
             // md:grid grid-rows-1"
           >
             {/* 1 */}
-            <div
-              className="xl:pl-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-start"
-              data-aos="fade-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
+            <div className="xl:pl-12 mt-10 mb-5 mx-15 py-10 px-15 flex">
               <div
-                class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
+                className="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
             overflow-hidden md:max-w-xl
             transition ease-in-out delay-150 hover:translate hover:scale-110 duration-300"
               >
-                <div class="md:flex mx-0 sm:mx-3">
-                  <div class="md:shrink-0 p-10 sm:p-7">
+                <div className="md:flex mx-0 sm:mx-3">
+                  <div className="md:shrink-0 p-10 sm:p-7">
                     <img
-                      class="h-full w-full object-cover md:w-52 md:h-full sm:w-full sm:h-48 "
+                      className="h-full w-full object-cover md:w-52 md:h-full sm:w-full sm:h-48 "
                       src={Ex1}
                       alt="Modern building architecture"
                     />
                   </div>
                   <div
-                    class="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
-                md:pt-5 lg:pt-5 lx:pt-5"
+                    className="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
+                md:pt-5 lg:pt-5 xl:pt-5"
                   >
                     <div className="border-4 border-white"></div>
                     <h1
-                      class="block mt-1 text-center sm:text-center md:text-left lg:text-left lx:text-left
+                      className="block mt-1 text-center sm:text-center md:text-left lg:text-left xl:text-left
                     text-2xl font-bold leading-tight font-medium text-black "
                     >
                       MCT
                     </h1>
-                    <p class="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left lx:text-left">
+                    <p className="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left xl:text-left">
                       MCT는
                       <br />
                       자동차 부품을 생산하는
                       <br />
                       자동차 부품 전문회사입니다.
                     </p>
-                    <div
-                      className="ml-0 sm:ml-12 pl-11 w-60 border-4 border-white pt-1
-                  sm:pt-0 sm:pl-11 md:pl-0 lg:pl-0 lx:pl-0"
-                    >
-                      <div
-                        className="border-4 border-white p-0 pl-4
-                    sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
-                    sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
-                      >
+                    <div className="py-5 flex ml-0 justify-center md:justify-start">
+                      <div className="flex justify-center md:justify-end md:pr-2">
                         <a href="/introduce">
                           <button
-                            className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
-                        font-bold py-3 px-4 rounded-full inline-flex item-center"
+                            className="bg-black border-2 border-black hover:bg-white
+                            hover:border-2 hover:border-black hover:text-black text-white
+                            font-bold py-3 px-4 rounded-full inline-flex"
                           >
                             <span>자세히 보기 </span>
                             <svg
@@ -94,12 +83,7 @@ class Explain extends Component {
             </div>
 
             {/* 2 */}
-            <div
-              className="xl:pr-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-end"
-              data-aos="fade-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
+            <div className="xl:pr-12 mt-10 mb-5 mx-15 py-10 px-15 flex justify-end">
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
@@ -132,19 +116,13 @@ class Explain extends Component {
                       <br />
                       다하겠습니다.
                     </p>
-                    <div
-                      className="ml-0 sm:ml-12 pl-11 w-60 border-4 border-white pt-1
-                  sm:pt-0 sm:pl-11 md:pl-0"
-                    >
-                      <div
-                        className="border-4 border-white p-0 pl-4
-                    sm:pt-2 md:p-0 lg:p-0 xl:p-0 md:ml-0 sm:m-3
-                    sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
-                      >
+                    <div className="py-5 flex ml-0 justify-center md:justify-start">
+                      <div className="flex justify-center md:justify-end md:pr-2">
                         <a href="/introduce">
                           <button
-                            className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
-                        font-bold py-3 px-4 rounded-full inline-flex item-center"
+                            className="bg-black border-2 border-black hover:bg-white
+                            hover:border-2 hover:border-black hover:text-black text-white
+                            font-bold py-3 px-4 rounded-full inline-flex"
                           >
                             <span>자세히 보기 </span>
                             <svg
@@ -171,57 +149,46 @@ class Explain extends Component {
             </div>
 
             {/* 3 */}
-            <div
-              className="xl:pl-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-start"
-              data-aos="fade-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
+            <div className="xl:pl-12 mt-10 mb-5 mx-15 py-10 px-15 flex">
               <div
-                class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
+                className="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
             sm:max-w-md mx-auto bg-white rounded-xl shadow-md
             overflow-hidden md:max-w-xl
             transition ease-in-out delay-150 hover:translate hover:scale-110 duration-300"
               >
-                <div class="md:flex mx-0 sm:mx-3">
-                  <div class="md:shrink-0 p-10 sm:p-7">
+                <div className="md:flex mx-0 sm:mx-3">
+                  <div className="md:shrink-0 p-10 sm:p-7">
                     <img
-                      class="h-full w-full object-cover md:w-52 md:h-full sm:w-full sm:h-48 "
+                      className="h-full w-full object-cover md:w-60 md:h-full sm:w-full sm:h-48 "
                       src={Ex3}
                       alt="MCT explain3"
                     />
                   </div>
                   <div
-                    class="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
-                md:pt-5"
+                    className="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
+                md:pt-5 lg:pt-5 xl:pt-5"
                   >
                     <div className="border-4 border-white"></div>
                     <h1
-                      class="block mt-1 text-center sm:text-center md:text-left lg:text-left lx:text-left
+                      className="block mt-1 text-center sm:text-center md:text-left lg:text-left xl:text-left
                     text-2xl font-bold leading-tight font-medium text-black "
                     >
                       PRODUCT
                     </h1>
-                    <p class="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left lx:text-left">
+                    <p className="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left xl:text-left">
                       특허등록 생산제품 외 다양한 생산설비와
                       <br />
                       측정검사설비 등 최고의 제품들이
                       <br />
                       갖추어져있습니다.
                     </p>
-                    <div
-                      className="ml-0 sm:ml-12 pl-11 w-60 border-4 border-white pt-1
-                  sm:pt-0 sm:pl-11 md:pl-0"
-                    >
-                      <div
-                        className="border-4 border-white p-0 pl-4
-                    sm:pt-2 md:p-0 lg:p-0 lx:p-0 md:ml-0 lg:ml-0 lx:ml-0 sm:m-3
-                    sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
-                      >
-                        <a href="/product">
+                    <div className="py-5 flex ml-0 justify-center md:justify-start">
+                      <div className="flex justify-center md:justify-end md:pr-2">
+                        <a href="/introduce">
                           <button
-                            className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
-                        font-bold py-3 px-4 rounded-full inline-flex item-center"
+                            className="bg-black border-2 border-black hover:bg-white
+                            hover:border-2 hover:border-black hover:text-black text-white
+                            font-bold py-3 px-4 rounded-full inline-flex"
                           >
                             <span>자세히 보기 </span>
                             <svg
@@ -252,7 +219,7 @@ class Explain extends Component {
               className="xl:pr-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-end"
               data-aos="fade-up"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
+              data-aos-duration="500"
             >
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]

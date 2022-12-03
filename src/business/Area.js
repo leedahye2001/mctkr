@@ -1,30 +1,51 @@
 import { Component } from "react";
 import Footer from "../components/Footer";
-import rightarrow from "../img/free-icon-chevron-6367846.png";
 import area01 from "../img/area01.png";
 import area02 from "../img/area02.png";
 import area03 from "../img/area03.png";
 import area04 from "../img/area04.png";
 import area05 from "../img/area05.png";
 import area06 from "../img/road-ga288eb08e_1280.jpg";
+import mcthelp from "../img/Help.png";
+import rightarrow from "../img/free-icon-chevron-6367846.png";
 
 class Area extends Component {
   render() {
     return (
       <div>
-        {/* <div>
-          <div className="flex flex-rows-1 pl-10 sm:pl-20 pt-10 sm:pt-20 md:pt-20 pb-10 sm:pb-20 md:pb-20 w-full bg-white">
+        <div className="relative">
+          <div>
+            <img
+              src={mcthelp}
+              className="object-cover h-[500px] w-full"
+              alt="help"
+            />
+          </div>
+          <div className="bg-black w-full h-auto text-center">
+            <p
+              className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 
+          font-black text-5xl text-[#333]"
+            >
+              BUSINESS
+              <div className="flex justify-center">
+                <hr className="mt-5 mb-10 h-px border-2 w-1/3 bg-black border-black" />
+              </div>
+              <span className="text-4xl">사업영역 및 소개</span>
+            </p>
+          </div>
+
+          <div className="flex flex-rows-1 pl-10 pt-10 sm:pt-20 md:pt-20 pb-10 sm:pb-20 md:pb-20 w-full bg-white">
             <span className="font-bold">홈</span>
             <div className="pl-2"></div>
             <img src={rightarrow} className="pt-1 h-5 w-5" alt="rightarrow" />
             <div className="pl-2"></div>
-            <span className="font-bold">COMPANY</span>
+            <span className="font-bold">BUSINESS</span>
             <div className="pl-2"></div>
             <img src={rightarrow} className="pt-1 h-5 w-5" alt="rightarrow" />
             <div className="pl-2"></div>
-            <span className="font-bold">회사연혁</span>
+            <span className="font-bold">사업영역 및 소개</span>
           </div>
-        </div> */}
+        </div>
 
         <div className="flex flex-rows-1">
           <div className="px-10 sm:px-20 w-full h-full">
@@ -227,7 +248,6 @@ class Area extends Component {
             </div>
           </div>
         </div>
-
         <Footer />
       </div>
     );

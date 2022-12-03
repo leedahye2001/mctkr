@@ -82,7 +82,7 @@ export const links = [
     submenu: true,
     sublinks: [
       {
-        Head: "CUSTOMER",
+        Head: "NOTICE",
         sublink: [{ name: "공지사항", link: "/customer" }],
       },
       {

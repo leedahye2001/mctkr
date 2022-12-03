@@ -3,7 +3,7 @@ import mcthelp from "../img/Help.png";
 import rightarrow from "../img/free-icon-chevron-6367846.png";
 import Footer from "../components/Footer";
 
-class Contact extends Component {
+class Notice extends Component {
   render() {
     return (
       <div>
@@ -24,7 +24,7 @@ class Contact extends Component {
               <div className="flex justify-center">
                 <hr className="mt-5 mb-10 h-px border-2 w-1/3 bg-black border-black" />
               </div>
-              <span className="text-4xl">Contact</span>
+              <span className="text-4xl">Notice</span>
             </p>
           </div>
 
@@ -37,7 +37,7 @@ class Contact extends Component {
             <div className="pl-2"></div>
             <img src={rightarrow} className="pt-1 h-5 w-5" alt="rightarrow" />
             <div className="pl-2"></div>
-            <span className="font-bold">Contact</span>
+            <span className="font-bold">Notice</span>
           </div>
         </div>
 
@@ -46,16 +46,15 @@ class Contact extends Component {
             {/* top */}
             <div>
               <span className="text-black text-3xl sm:text-4xl font-black sm:font-black">
-                온라인 문의
+                공지사항
               </span>
               <hr className="my-10 h-px border-2 w-1/6 bg-black border-black" />
               <br />
               <br />
               <span className="text-[#000] text-base sm:text-2xl font-light">
-                문의사항을 남겨주세요 :)
-                <br />“
-                <span className="font-bold">내용을 상세히 기재해주시면 </span>
-                보다 정확한 답변을 드릴 수 있습니다.”
+                “MCT의
+                <span className="font-bold">&nbsp;새로운 소식</span>을
+                알려드립니다.”
               </span>
             </div>
             {/* main content */}
@@ -67,4 +66,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default Notice;

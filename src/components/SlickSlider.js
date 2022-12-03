@@ -3,9 +3,6 @@ import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "./SlickSlider.css";
-// import prevarrowwhite from "./image/arrow-right.png";
-// import nextarrowwhite from "./image/arrow-right.png";
 
 const Container = styled.div`
   overflow: hidden;
@@ -17,51 +14,15 @@ const StyledSlider = styled(Slider)`
     outline: none;
   }
 
-  .slick-arrow {
-    display: flex;
-    z-index: 10;
-    width: 1vw;
-    height: 1vw;
-  }
   .slick-dots {
     width: 100%;
     bottom: 23px;
   }
   .slick-dots li button:before {
-    color: white;
+    color: black;
     font-size: 10px;
   }
-  /* 
-  .slick-prev {
-    left: -1.2vw;
-    cursor: pointer;
-    &::before {
-      content: "";
-    }
-  }
-
-  .slick-next {
-    right: -1.1vw;
-    cursor: pointer;
-    &::before {
-      content: "";
-    }
-  } */
 `;
-
-// export const ImproptuPrevArrow = styled.img.attrs({
-//   src: prevarrowwhite,
-// })`
-//   width: 20px;
-//   height: 14px;
-// `;
-
-// export const ImproptuNextArrow = styled.img.attrs({
-//   src: nextarrowwhite,
-// })`
-//   width: 20px;
-//   height: 14px;
-// `;
 
 const items = [
   {
@@ -90,59 +51,46 @@ const items = [
   },
 ];
 
-// function NextArrow(props) {
-//   const { className, onClick } = props;
-//   return (
-//     <div className={className} onClick={onClick}>
-//       <styled.ImproptuNextArrow />
-//     </div>
-//   );
-// }
-
-// function PrevArrow(props) {
-//   const { className, onClick } = props;
-//   return (
-//     <div className={className} onClick={onClick}>
-//       <styled.ImproptuPrevArrow />
-//     </div>
-//   );
-// }
-
 class SlickSlider extends Component {
   render() {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 1000,
+      speed: 1500,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
       autoplay: true,
-      autoplayspeed: 2000,
+      autoplayspeed: 1000,
       centerMode: true,
-      // prewArrow: <PrevArrow />,
-      // nextArrow: <NextArrow />,
     };
 
     return (
-      <div className="ComponentBox">
+      <div className="flex justify-center align-items-center">
         <Container>
           <StyledSlider {...settings}>
             {items.map((item) => {
               return (
-                <div key={item.id}>
-                  <div className="my-0 mx-3">
-                    <div className="absolute justify-items-center align-center text-black opacity-0.8">
-                      <div className="font-sm">{item.text4}</div>
-                      <div className="font-black mb-10 text-2xl">
-                        {item.text1}
+                <div key={item.id} className="relative">
+                  <div className="my-0 mx-0 w-full">
+                    <div
+                      className="top-1/2 sm:top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 
+                    absolute justify-center align-center text-black opacity-0.8"
+                    >
+                      <div className="text-xl text-[#005AAC] pb-10">
+                        {item.text4}
                       </div>
-                      <div className="font-black mb-10 text-2xl">
-                        {item.text2}
+                      {/* <div className="font-black mb-10 text-2xl"> */}
+                      <div className="font-black text-5xl">
+                        <div>{item.text1}</div>
+                        <br />
+                        <div>{item.text2}</div>
+                        <br />
+                        {/* </div>
+                      <div className="font-black mb-10 text-2xl"> */}
+                        <div>{item.text3}</div>
                       </div>
-                      <div className="font-black mb-10 text-2xl">
-                        {item.text3}
-                      </div>
+                      {/* </div> */}
                     </div>
                     <img
                       src={item.url}
@@ -161,28 +109,3 @@ class SlickSlider extends Component {
 }
 
 export default SlickSlider;
-
-{
-  /* <div class="slide slide_02 slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="width: 1440px;">
-                    <div class="main_title">
-                        <div class="border_box">
-                            <div class="border_box">
-                                <div class="border_left_box">
-                                <img src="http://smartkor.kr/theme/smartkorea/contents/img/title_left.png">
-                                </div>
-                                <div class="border_right_box">
-                                <img src="http://smartkor.kr/theme/smartkorea/contents/img/title_right.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main_text_box">
-                            <div class="main_text_top font_noto">
-                                <span>신뢰성 높은 품질의 제품!</span>
-                            </div>
-                            <div class="main_text_bottom">
-                                <span><span class="bold">SMART</span>KOREA</span>
-                            </div>
-                        </div>
-                    </div>
-                </div> */
-}

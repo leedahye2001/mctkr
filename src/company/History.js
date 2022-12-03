@@ -1,6 +1,5 @@
 import { Component } from "react";
 import Footer from "../components/Footer";
-import HistorySide from "../components/HistorySide";
 import license2017 from "../img/2017license.png";
 import license201901 from "../img/2019license01.png";
 import license201902 from "../img/2019license02.png";
@@ -12,49 +11,47 @@ import license202102 from "../img/2021license02.png";
 import license202103 from "../img/2021license03.png";
 import license202201 from "../img/2022license01.png";
 import license202202 from "../img/2022license02.png";
+import rightarrow from "../img/free-icon-chevron-6367846.png";
+import mcthelp from "../img/Help.png";
 
 class History extends Component {
   render() {
     return (
       <div>
-        <HistorySide />
-        <div className="flex flex-rows-1 ">
-          {/* left sidemenu */}
-          {/* <div
-            className="invisible sm:invisible md:visible lg:visible xl:visible
-                      pl-10 sm:pl-10 md:w-[400px] w-0 lg:w-70 sm:w-0
-                      h-[400px] sticky top-40 text-blue-900"
-          >
-            <span className="text-2xl font-bold">COMPANY</span>
-            <hr class="w-[120px] border-2 border-blue-900"></hr>
-            <br />
-            <br />
-            <a href="/introduce">
-              <span className="text-gray-400 text-xl hover:text-blue-900 transition duration-500 ease-in-out">
-                회사소개
-              </span>
-            </a>
-            <br />
-            <br />
-            <a href="/history">
-              <span className="text-xl font-base">회사연혁</span>
-            </a>
-            <br />
-            <br />
-            <a href="/license">
-              <span className="text-gray-400 text-xl hover:text-blue-900 transition duration-500 ease-in-out">
-                특허 및 인증현황
-              </span>
-            </a>
-            <br />
-            <br />
-            <a href="/road">
-              <span className="text-gray-400 text-xl hover:text-blue-900 transition duration-500 ease-in-out">
-                오시는 길
-              </span>
-            </a>
-          </div> */}
+        <div className="relative">
+          <div>
+            <img
+              src={mcthelp}
+              className="object-cover h-[500px] w-full"
+              alt="help"
+            />
+          </div>
+          <div className="bg-black w-full h-auto text-center">
+            <p
+              className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 
+          font-black text-5xl text-[#333]"
+            >
+              HISTORY
+              <div className="flex justify-center">
+                <hr className="mt-5 mb-10 h-px border-2 w-1/3 bg-black border-black" />
+              </div>
+              <span className="text-4xl">회사연혁</span>
+            </p>
+          </div>
 
+          <div className="flex flex-rows-1 pl-10 pt-10 sm:pt-20 md:pt-20 pb-10 sm:pb-20 md:pb-20 w-full bg-white">
+            <span className="font-bold">홈</span>
+            <div className="pl-2"></div>
+            <img src={rightarrow} className="pt-1 h-5 w-5" alt="rightarrow" />
+            <div className="pl-2"></div>
+            <span className="font-bold">COMPANY</span>
+            <div className="pl-2"></div>
+            <img src={rightarrow} className="pt-1 h-5 w-5" alt="rightarrow" />
+            <div className="pl-2"></div>
+            <span className="font-bold">회사연혁</span>
+          </div>
+        </div>
+        <div className="flex flex-rows-1 ">
           <div className="px-10 sm:px-10 w-full h-full">
             <p className="text-black text-3xl sm:text-4xl font-black pr-5">
               회사연혁
@@ -74,7 +71,7 @@ class History extends Component {
 
             {/* Main contect */}
             <div
-              className="px-0 flex gap-8 justify-items-center py-20"
+              className="flex gap-8 justify-items-center py-20 lg:ml-40 xl:ml-60"
               data-aos="fade-up"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="1000"

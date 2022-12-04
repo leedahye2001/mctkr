@@ -8,7 +8,6 @@ import NewsHome from "../news/NewsHome";
 import NoticeHome from "../customer/NoticeHome";
 import Help from "../components/Help";
 import Footer from "../components/Footer";
-import "./Home.css";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);

@@ -59,6 +59,104 @@ class Contact extends Component {
               </span>
             </div>
             {/* main content */}
+            <div>
+              <div>
+                <section class="bg-white">
+                  <div class="px-0 sm:px-20 py-8 lg:py-16">
+                    <form action="#" class="space-y-8">
+                      <div>
+                        <label
+                          for="name"
+                          class="block mb-2 text-base font-medium text-gray-900 "
+                        >
+                          이름
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                              focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                          placeholder="이름"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="phone"
+                          class="block mb-2 text-base font-medium text-gray-900 "
+                        >
+                          전화번호
+                        </label>
+                        <input
+                          type="phone"
+                          id="email"
+                          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                              focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                          placeholder="01012345678"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="email"
+                          class="block mb-2 text-base font-medium text-gray-900 "
+                        >
+                          이메일
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                              focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                          placeholder="mct@mctkr.com"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="subject"
+                          class="block mb-2 text-base font-medium text-gray-900 "
+                        >
+                          제목
+                        </label>
+                        <input
+                          type="text"
+                          id="subject"
+                          class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border
+                          border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500
+                          "
+                          placeholder="제목을 입력해주세요."
+                          required
+                        />
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label
+                          for="message"
+                          class="block mb-2 text-base font-medium text-gray-900 "
+                        >
+                          내용
+                        </label>
+                        <textarea
+                          id="message"
+                          rows="6"
+                          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border
+                          border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
+                          placeholder="내용을 입력해주세요."
+                        />
+                      </div>
+
+                      <button
+                        className="border border-[#11264F] bg-[#11264F] rounded-lg
+                             hover:bg-blue-900 w-full p-4 my-10 text-white"
+                        type="submit"
+                      >
+                        문의하기
+                      </button>
+                    </form>
+                  </div>
+                </section>
+              </div>
+            </div>
           </div>
         </div>
         <Footer />

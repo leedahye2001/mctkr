@@ -1,6 +1,5 @@
 import React, { Component, useState } from "react";
 import Footer from "../components/Footer";
-import HistorySide from "../components/HistorySide";
 import license2017 from "../img/2017license.png";
 import license201901 from "../img/2019license01.png";
 import license201902 from "../img/2019license02.png";
@@ -17,15 +16,12 @@ import pricegimhae from "../img/pricegimhae.png";
 import centralprice01 from "../img/centralprice01.png";
 import centralprice02 from "../img/centralprice02.png";
 import centralprice03 from "../img/centralprice03.png";
+import president from "../img/president.png";
 import mcthelp from "../img/Help.png";
 import rightarrow from "../img/free-icon-chevron-6367846.png";
 import { Link } from "react-router-dom";
-import Dropdown from "../components/Dropdown";
-import "../components/Dropdown.css";
 
 const License = (props) => {
-  // const [dropdownVisibility, setDropdownVisibility] = React.useState(false);
-
   return (
     <div>
       <div className="relative">
@@ -229,27 +225,23 @@ const License = (props) => {
           <hr class="my-20 h-px bg-gray-200 border-0"></hr>
 
           {/* 수상실적 */}
-          <span
-            className="text-black text-3xl sm:text-4xl font-black"
-            data-aos="fade-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-          >
+          <span className="text-black text-3xl sm:text-4xl font-black">
             수상실적
           </span>
           <br />
 
-          <div
-            className="justify-items-center py-10"
-            data-aos="fade-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
+          <div className="justify-items-center py-10">
+            <div>
+              <p className="text-first pt-3 font-semibold text-sm sm:text-lg lg:text-xl pb-5">
+                ▶ 대통령 표창 수상
+              </p>
+              <img
+                src={president}
+                className="w-full sm:w-1/2 lg:w-1/3 justify-items-center"
+                alt="대통령상 수상"
+              />
+            </div>
+            <div>
               <p className="text-first pt-3 font-semibold text-sm sm:text-lg lg:text-xl pb-5">
                 ▶ 정부기관 수상 (자랑스러운 CEO - 김해시장 표창)
               </p>
@@ -259,12 +251,7 @@ const License = (props) => {
                 alt="정부기관 수상 (자랑스러운 CEO - 김해시장 표창)"
               />
             </div>
-            <div
-              className="pt-10"
-              data-aos="fade-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
+            <div>
               <p className="text-first pt-3 font-semibold text-sm sm:text-lg lg:text-xl pb-5">
                 ▶ 센트랄 社 3개년 연속 품질우수협력사상 수상
               </p>

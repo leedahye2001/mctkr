@@ -7,7 +7,6 @@ import {
   Navigate,
 } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import ContactForm from "./contact/ContactForm";
 import History from "./company/History";
 import Introduce from "./company/Introduce";
 import License from "./company/License";
@@ -17,12 +16,11 @@ import Majorcustomer from "./business/MajorCustomer";
 import Home from "./pages/Home";
 import ProductIntro from "./product/ProductIntro";
 import ProductionLine from "./product/ProductionLine";
-import Customer from "./customer/Customer";
-import Notice from "./contact/Notice";
-import Contact from "./contact/Contact";
+import Notice from "./customer/Notice";
+import Contact from "./customer/Contact";
 import News from "./news/News";
 import AddNews from "./news/AddNews";
-import UpdateNews from "./news/UpdateNews";
+import AddNotice from "./customer/AddNotice";
 import Login from "./sign/Login";
 import MeasurementFacility from "./product/MeasurementFacility";
 import { signOut } from "firebase/auth";
@@ -72,7 +70,26 @@ function App() {
           <Route path="/majorcustomer" element={<Majorcustomer />} />
           <Route path="/productintro" element={<ProductIntro />} />
           <Route path="/productionline" element={<ProductionLine />} />
-          <Route path="/notice" element={<Notice />} />
+          <Route
+            path="/notice"
+            element={<Notice setActive={setActive} user={user} />}
+          />
+          <Route
+            path="/addnotice"
+            element={
+              user?.uid ? <AddNotice user={user} /> : <Navigate to="/" />
+            }
+          />
+          <Route
+            path="/updatenotice/:id"
+            element={
+              user?.uid ? (
+                <AddNotice user={user} setActive={setActive} />
+              ) : (
+                <Navigate to="/" />
+              )
+            }
+          />
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/news"
@@ -82,6 +99,7 @@ function App() {
             path="/addnews"
             element={user?.uid ? <AddNews user={user} /> : <Navigate to="/" />}
           />
+
           <Route
             path="/newsdetail/:id"
             element=<NewsDetail setActive={setActive} />
@@ -96,7 +114,6 @@ function App() {
               )
             }
           />
-          <Route path="/customer" element={<Customer />} />
           <Route
             path="/measurementfacility"
             element={<MeasurementFacility />}

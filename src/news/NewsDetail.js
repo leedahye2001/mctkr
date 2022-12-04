@@ -1,53 +1,3 @@
-// import { doc, getDoc } from "firebase/firestore";
-// import React, { useState, useEffect } from "react";
-// import { useParams } from "react-router-dom";
-// import { db } from "../firebase-config";
-
-// const NewsDetail = ({ setActive }) => {
-//   const { id } = useParams();
-//   const [news, setNews] = useState(null);
-
-//   useEffect(() => {
-//     id && getNewsDetail();
-//   }, [id]);
-
-//   const getNewsDetail = async () => {
-//     const docRef = doc(db, "news", id);
-//     const newsDetail = await getDoc(docRef);
-//     setNews(newsDetail.data());
-//     setActive(null);
-//   };
-
-//   return (
-//     <div className="relative w-full h-1/2">
-//       <div className="z-40 object-cover">
-//         <div style={{ backgroundImage: `url('${news?.imgUrl}')` }}>
-//           <div className="absolute top-0 left-0"></div>
-//           <div>
-//             <span>{news?.timestamp.toDate().toDateString()}</span>
-//             <h2>{news?.title}</h2>
-//           </div>
-//         </div>
-//         <div>
-//           <div>
-//             <div>
-//               <div>
-//                 <span>
-//                   By <p className="author">{news?.author}</p> -&nbsp;
-//                   {news?.timestamp.toDate().toDateString()}
-//                 </span>
-//                 <p>{news?.description}</p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default NewsDetail;
-
 import {
   collection,
   doc,
@@ -61,18 +11,10 @@ import {
   orderBy,
   where,
 } from "firebase/firestore";
-// import { isEmpty } from "lodash";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-
-// import CommentBox from "../components/CommentBox";
-// import Like from "../components/Like";
-// import FeatureBlogs from "../components/FeatureBlogs";
-// import RelatedBlog from "../components/RelatedBlog";
-// import Tags from "../components/Tags";
-// import UserComments from "../components/UserComments";
+import Footer from "../components/Footer";
 import { db } from "../firebase-config";
-// import Spinner from "../components/Spinner";
 
 const NewsDetail = ({ setActive }) => {
   //   const userId = user?.uid;
@@ -180,30 +122,38 @@ const NewsDetail = ({ setActive }) => {
 
   //   console.log("relatedBlogs", relatedBlogs);
   return (
-    <div className="px-20">
-      {/* <div
+    <div>
+      <div className="px-10 md:px-40">
+        <div className="pt-20 pb-10">
+          <span className="text-black text-3xl sm:text-4xl font-black sm:font-black">
+            뉴스
+          </span>
+          <hr className="my-10 h-px border-2 w-1/6 bg-black border-black" />
+        </div>
+        {/* <div
         className="news-title-box"
         style={{ backgroundImage: `url('${news?.imgUrl}')` }}
       > */}
 
-      {/* </div> */}
-      <div>
+        {/* </div> */}
         <div>
           <div>
-            <div className="grid grid-cols">
-              <span className="font-semibold text-2xl">{news?.title}</span>
-              <span className="text-start">
-                {news?.timestamp.toDate().toDateString()}
-                {/* <Like handleLike={handleLike} likes={likes} userId={userId} /> */}
-              </span>
-              <div className="w-full h-[260px]">
-                <img className="" src={news?.imgUrl} alt={news?.title} />
-              </div>
-              <p>{news?.description}</p>
-              {/* <div className="text-start">
+            <div>
+              <div>
+                <span className="font-semibold text-3xl">{news?.title}</span>
+                <span className="text-start">
+                  <br />
+                  {news?.timestamp.toDate().toDateString()}
+                  {/* <Like handleLike={handleLike} likes={likes} userId={userId} /> */}
+                </span>
+                <div className="py-10 w-full flex justify-center">
+                  <img src={news?.imgUrl} alt={news?.title} />
+                </div>
+                <p className="mb-20 text-[#666]">{news?.description}</p>
+                {/* <div className="text-start">
                 <Tags tags={blog?.tags} />
               </div> */}
-              {/* <br />
+                {/* <br />
               <div className="custombox">
                 <div className="scroll">
                   <h4 className="small-title">{comments?.length} Comment</h4>
@@ -222,22 +172,24 @@ const NewsDetail = ({ setActive }) => {
                   )}
                 </div>
               </div> */}
-              {/* <CommentBox
+                {/* <CommentBox
                 userId={userId}
                 userComment={userComment}
                 setUserComment={setUserComment}
                 handleComment={handleComment}
               /> */}
-            </div>
-            {/* <div className="col-md-3">
+              </div>
+              {/* <div className="col-md-3">
               <div className="blog-heading text-start py-2 mb-4">Tags</div>
               <Tags tags={tags} />
               <FeatureBlogs title={"Recent Blogs"} blogs={blogs} />
             </div> */}
+            </div>
+            {/* <RelatedBlog id={id} blogs={relatedBlogs} /> */}
           </div>
-          {/* <RelatedBlog id={id} blogs={relatedBlogs} /> */}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

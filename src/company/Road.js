@@ -23,47 +23,11 @@ class Road extends Component {
             <div className="pl-2"></div>
             <img src={rightarrow} className="pt-1 h-5 w-5" alt="rightarrow" />
             <div className="pl-2"></div>
-            <span className="font-bold">회사연혁</span>
+            <span className="font-bold">오시는 길</span>
           </div>
         </div>
 
         <div className="flex flex-rows-1">
-          {/* left sidemenu */}
-          {/* <div
-            className="invisible sm:invisible md:hidden lg:visible xl:visible
-                      pl-10 sm:pl-10 md:w-[400px] w-0 lg:w-70 sm:w-0
-                      h-[400px] sticky top-40 text-blue-900"
-          >
-            <span className="text-2xl font-bold">COMPANY</span>
-            <hr class="w-[120px] border-2 border-blue-900"></hr>
-            <br />
-            <br />
-            <a href="/introduce">
-              <span className="text-gray-400 text-xl hover:text-blue-900 transition duration-500 ease-in-out">
-                회사소개
-              </span>
-            </a>
-            <br />
-            <br />
-            <a href="/history">
-              <span className="text-gray-400 text-xl hover:text-blue-900 transition duration-500 ease-in-out">
-                회사연혁
-              </span>
-            </a>
-            <br />
-            <br />
-            <a href="/license">
-              <span className="text-gray-400 text-xl hover:text-blue-900 transition duration-500 ease-in-out">
-                특허 및 인증현황
-              </span>
-            </a>
-            <br />
-            <br />
-            <a href="/road">
-              <span className="text-xl font-base">오시는 길</span>
-            </a>
-          </div> */}
-
           <div className="px-10 sm:px-20 w-full h-full">
             <p className="text-black text-3xl sm:text-4xl font-black pr-5">
               오시는 길

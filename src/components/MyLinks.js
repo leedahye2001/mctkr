@@ -83,7 +83,7 @@ export const links = [
     sublinks: [
       {
         Head: "NOTICE",
-        sublink: [{ name: "공지사항", link: "/customer" }],
+        sublink: [{ name: "공지사항", link: "/notice" }],
       },
       {
         Head: "CONTACT",

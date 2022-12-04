@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../img/mct_logo.jpeg";
 import NavLinks from "./NavLinks";
-// import Button from "./Button";
 
 const NavBar = ({ active, setActive, user, handleLogout }) => {
   const [click, setClick] = useState(false);
@@ -54,7 +53,7 @@ const NavBar = ({ active, setActive, user, handleLogout }) => {
               {userId ? (
                 <>
                   <div className="flex cols-2 text-center">
-                    <p className="px-4 py-2 mt-3">{user?.displayName} 님</p>
+                    <p className="px-4 py-2 mt-6">{user?.displayName} 님</p>
                     <div className="grid grid-cols justify-items-center">
                       <li
                         className="bg-[#a4a4a4] text-white rounded-full font-normal text-base
@@ -67,10 +66,20 @@ const NavBar = ({ active, setActive, user, handleLogout }) => {
                         <li
                           className={`${
                             active === "news" ? "active" : ""
-                          } text-blue-600`}
+                          } text-blue-700`}
                           onClick={() => setActive("news")}
                         >
                           보도자료 추가
+                        </li>
+                      </Link>
+                      <Link to="/addnotice">
+                        <li
+                          className={`${
+                            active === "notice" ? "active" : ""
+                          } text-red-600`}
+                          onClick={() => setActive("notice")}
+                        >
+                          공지사항 추가
                         </li>
                       </Link>
                     </div>
@@ -125,6 +134,16 @@ const NavBar = ({ active, setActive, user, handleLogout }) => {
                             onClick={() => setActive("news")}
                           >
                             보도자료 추가
+                          </li>
+                        </Link>
+                        <Link to="/addnotice">
+                          <li
+                            className={`${
+                              active === "notice" ? "active" : ""
+                            } text-blue-600`}
+                            onClick={() => setActive("notice")}
+                          >
+                            공지사항 추가
                           </li>
                         </Link>
                       </div>

@@ -2,26 +2,28 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { excerpt } from "../utility";
 
-const NewSection = ({ news, user, handleDelete }) => {
+const NewsHome = ({ news, user, handleDelete }) => {
   const userId = user?.uid;
 
   return (
-    <div>
-      <div>
-        <span className="text-black text-2xl sm:text-3xl font-black sm:font-black">
-          NEWS
-        </span>
-      </div>
+    <div className="mx-10">
+      <Link to="/news">
+        <div className="mt-10 mb-5 mx-0 sm:mx-10">
+          <span className="text-black text-2xl sm:text-3xl font-black sm:font-black">
+            NEWS
+          </span>
+        </div>
+      </Link>
       <div>
         {news?.map((item) => (
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
-            <div className="my-10 p-5" key={item.id}>
-              <div className="flex cols-2 gap-8">
+          <div className="mx-0 sm:mx-10 grid grid-cols-1 md:grid-cols-1 gap-2 ">
+            <div className="my-5" key={item.id}>
+              <div className="flex cols-2">
                 {/* 이미지 */}
                 <div>
                   <div className="rounded-md flex relative">
                     <img
-                      className="h-[300px] w-[400px] object-cover"
+                      className="h-[100px] w-[200px] object-cover"
                       src={item.imgUrl}
                       alt={item.title}
                     />
@@ -29,29 +31,23 @@ const NewSection = ({ news, user, handleDelete }) => {
                 </div>
                 {/* 글 */}
                 <div>
-                  <div className="mt-10 mb-5">
-                    <span className="font-semibold text-2xl">{item.title}</span>
-                    <span className="font-semibold">
-                      <p>
-                        {item.author} -&nbsp;
-                        <span className="font-normal">
-                          {item.timestamp.toDate().toDateString()}
-                        </span>
-                      </p>
-                    </span>
-                  </div>
-                  <div className="mt-5 text-[#666]">
-                    {excerpt(item.description, 120)}
-                  </div>
+                  <Link to={`/newsdetail/${item.id}`}>
+                    <div className="">
+                      <span className="font-semibold text-xl hover:underline hover">
+                        {item.title}
+                      </span>
+                    </div>
+                  </Link>
+                  <span className="font-semibold">
+                    <p>
+                      {item.author} -&nbsp;
+                      <span className="font-normal">
+                        {item.timestamp.toDate().toDateString()}
+                      </span>
+                    </p>
+                  </span>
+
                   <div className="mt-5 relative">
-                    <Link to={`/newsdetail/${item.id}`}>
-                      <button
-                        className="bg-blue-500 text-sm sm:text-base text-white py-3 px-4
-                    rounded-md hover:bg-blue-600"
-                      >
-                        자세히 보기
-                      </button>
-                    </Link>
                     {user?.uid && item.userId === user.uid && (
                       <div className="absolute bottom-0 right-0 grid grid-cols-2 gap-2 ">
                         <Link to={`/updatenews/${item.id}`}>
@@ -99,4 +95,4 @@ const NewSection = ({ news, user, handleDelete }) => {
   );
 };
 
-export default NewSection;
+export default NewsHome;

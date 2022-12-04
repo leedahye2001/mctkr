@@ -4,17 +4,19 @@ import Ex2 from "../img/Ex2.png";
 import Ex3 from "../img/Ex3.png";
 import Ex4 from "../img/Ex4.png";
 import rightarrow from "../img/right-arrow.png";
-import "./Explain.scss";
 
 class Explain extends Component {
   render() {
     return (
       <div>
-        <div className="background">
+        <div className="bg-[#f2f2f2]">
           <div
             className="
             grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2"
             // md:grid grid-rows-1"
+            data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="500"
           >
             {/* 1 */}
             <div className="xl:pl-12 mt-10 mb-5 mx-15 py-10 px-15 flex">
@@ -29,7 +31,7 @@ class Explain extends Component {
                     <img
                       className="h-full w-full object-cover md:w-52 md:h-full sm:w-full sm:h-48 "
                       src={Ex1}
-                      alt="Modern building architecture"
+                      alt="MCT ex1"
                     />
                   </div>
                   <div
@@ -104,12 +106,12 @@ class Explain extends Component {
                   >
                     <div className="border-4 border-white"></div>
                     <h1
-                      class="block mt-1 text-center sm:text-center md:text-left lg:text-left lx:text-left
+                      class="block mt-1 text-center sm:text-center md:text-left lg:text-left xl:text-left
                     text-2xl font-bold leading-tight font-medium text-black "
                     >
                       고객 만족 기업
                     </h1>
-                    <p class="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left lx:text-left">
+                    <p class="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left xl:text-left">
                       품질보증시스템을 갖추어
                       <br />
                       고객이 만족하는 기업의 역할을
@@ -118,7 +120,7 @@ class Explain extends Component {
                     </p>
                     <div className="py-5 flex ml-0 justify-center md:justify-start">
                       <div className="flex justify-center md:justify-end md:pr-2">
-                        <a href="/introduce">
+                        <a href="/license">
                           <button
                             className="bg-black border-2 border-black hover:bg-white
                             hover:border-2 hover:border-black hover:text-black text-white
@@ -184,7 +186,7 @@ class Explain extends Component {
                     </p>
                     <div className="py-5 flex ml-0 justify-center md:justify-start">
                       <div className="flex justify-center md:justify-end md:pr-2">
-                        <a href="/introduce">
+                        <a href="/productintro">
                           <button
                             className="bg-black border-2 border-black hover:bg-white
                             hover:border-2 hover:border-black hover:text-black text-white
@@ -216,10 +218,10 @@ class Explain extends Component {
 
             {/* 4 */}
             <div
-              className="xl:pr-12 mt-5 mb-10 mx-15 py-10 px-15 flex justify-end"
-              data-aos="fade-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="500"
+              className="xl:pr-12 mt-10 mb-10 mx-15 py-10 px-15 flex justify-end"
+              // data-aos="fade-up"
+              // data-aos-easing="ease-out-cubic"
+              // data-aos-duration="500"
             >
               <div
                 class="w-4/5 md:max-h-[100%] lg:max-h-[100%] xl:max-h-[100%]
@@ -237,36 +239,30 @@ class Explain extends Component {
                   </div>
                   <div
                     class="p-8 pt-0 mt-3 sm:p-4 sm:pt-0
-                md:pt-5 lg:pt-5 lx:pt-5"
+                md:pt-5 lg:pt-5 xl:pt-5"
                   >
                     <div className="border-4 border-white"></div>
                     <h1
-                      class="block mt-1 text-center sm:text-center md:text-left lg:text-left lx:text-left
+                      class="block mt-1 text-center sm:text-center md:text-left lg:text-left xl:text-left
                     text-2xl font-bold leading-tight font-medium text-black "
                     >
                       충분한 경쟁력의
                       <br /> GLOBAL 전문 업체
                     </h1>
-                    <p class="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left lx:text-left">
+                    <p class="mt-4 text-slate-500 text-center sm:text-center md:text-left lg:text-left xl:text-left">
                       국내를 넘어 전 세계를 향해 나아가는
                       <br />
                       세계적 자동차 부품 생산 전문 기업으로
                       <br />
                       성장합니다.
                     </p>
-                    <div
-                      className="ml-0 sm:ml-12 pl-11 w-60 border-4 border-white pt-1
-                  sm:pt-0 sm:pl-11 md:pl-0 lg:pl-0 lx:pl-0"
-                    >
-                      <div
-                        className="border-4 border-white p-0 pl-4
-                    sm:pt-2 md:p-0 md:ml-0 sm:m-3
-                    sm:pl-5 md:pl-11 lg:pl-11 xl:pl-11"
-                      >
-                        <a href="/introduce">
+                    <div className="py-5 flex ml-0 justify-center md:justify-start">
+                      <div className="flex justify-center md:justify-end md:pr-2">
+                        <a href="/majorcustomer">
                           <button
-                            className="bg-black border-2 border-black hover:bg-white hover:border-2 hover:border-black hover:text-black text-white
-                        font-bold py-3 px-4 rounded-full inline-flex item-center"
+                            className="bg-black border-2 border-black hover:bg-white
+                            hover:border-2 hover:border-black hover:text-black text-white
+                            font-bold py-3 px-4 rounded-full inline-flex"
                           >
                             <span>자세히 보기 </span>
                             <svg

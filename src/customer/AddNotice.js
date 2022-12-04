@@ -17,7 +17,7 @@ const initialState = {
   description: "",
 };
 
-const AddNews = ({ user, setActive }) => {
+const Addnotice = ({ user, setActive }) => {
   const [form, setForm] = useState(initialState);
   const [file, setFile] = useState(null);
   const [progress, setProgress] = useState(null);
@@ -66,18 +66,18 @@ const AddNews = ({ user, setActive }) => {
     file && uploadFile();
   }, [file]);
 
-  useEffect(() => {
-    id && getNewsDetail();
-  }, [id]);
+  //   useEffect(() => {
+  //     id && getDetail();
+  //   }, [id]);
 
-  const getNewsDetail = async () => {
-    const docRef = doc(db, "news", id);
-    const snapshot = await getDoc(docRef);
-    if (snapshot.exists()) {
-      setForm({ ...snapshot.data() });
-    }
-    setActive(null);
-  };
+  //   const getNewsDetail = async () => {
+  //     const docRef = doc(db, "notice", id);
+  //     const snapshot = await getDoc(docRef);
+  //     if (snapshot.exists()) {
+  //       setForm({ ...snapshot.data() });
+  //     }
+  //     setActive(null);
+  //   };
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -88,7 +88,7 @@ const AddNews = ({ user, setActive }) => {
     if (title && description) {
       if (!id) {
         try {
-          await addDoc(collection(db, "news"), {
+          await addDoc(collection(db, "notice"), {
             ...form,
             timestamp: serverTimestamp(),
             author: user.displayName,
@@ -100,7 +100,7 @@ const AddNews = ({ user, setActive }) => {
         }
       } else {
         try {
-          await updateDoc(doc(db, "news", id), {
+          await updateDoc(doc(db, "notice", id), {
             ...form,
             timestamp: serverTimestamp(),
             author: user.displayName,
@@ -115,7 +115,7 @@ const AddNews = ({ user, setActive }) => {
       return alert("모든 필드는 필수 입력 사항입니다.");
     }
 
-    navigate("/news");
+    navigate("/notice");
   };
 
   return (
@@ -125,7 +125,7 @@ const AddNews = ({ user, setActive }) => {
           {/* top */}
           <div>
             <span className="text-black text-3xl sm:text-4xl font-black sm:font-black">
-              {id ? "뉴스 및 보도자료 수정" : "뉴스 및 보도자료 추가"}
+              {id ? "공지사항 수정" : "공지사항 추가"}
             </span>
             <hr className="my-10 h-px border-2 w-1/6 bg-black border-black" />
           </div>
@@ -159,12 +159,7 @@ const AddNews = ({ user, setActive }) => {
                     onChange={handleChange}
                   />
                 </div>
-                <div className="mb-3">
-                  <input
-                    type="file"
-                    onChange={(e) => setFile(e.target.files[0])}
-                  />
-                </div>
+
                 <div className="mb-3">
                   <button
                     className="border border-[#11264F] bg-[#11264F]
@@ -172,7 +167,7 @@ const AddNews = ({ user, setActive }) => {
                     type="submit"
                     disabled={progress !== null && progress < 100}
                   >
-                    {id ? "수정하기" : "게시하기"}
+                    {id ? "수정하기" : "공지하기"}
                   </button>
                 </div>
               </form>
@@ -184,4 +179,4 @@ const AddNews = ({ user, setActive }) => {
   );
 };
 
-export default AddNews;
+export default Addnotice;

@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { collection, doc, deleteDoc, onSnapshot } from "firebase/firestore";
 import { db } from "../firebase-config";
-import NewsSection from "./NewsSection";
-import Spinner from "./Spinner";
-import rightarrow from "../img/free-icon-chevron-6367846.png";
+import Spinner from "../news/Spinner";
 import mcthelp from "../img/Help.png";
+import rightarrow from "../img/free-icon-chevron-6367846.png";
+import Footer from "../components/Footer";
+import NoticeSection from "./NoticeSection";
 
-const News = ({ setActive, user }) => {
+const Notice = ({ setActive, user }) => {
   const [loading, setLoading] = useState(true);
-  const [news, setNews] = useState([]);
+  const [notice, setNotice] = useState([]);
 
   useEffect(() => {
     const unsub = onSnapshot(
-      collection(db, "news"),
+      collection(db, "notice"),
       (snapshot) => {
         let list = [];
         snapshot.docs.forEach((doc) => {
           list.push({ id: doc.id, ...doc.data() });
         });
-        setNews(list);
+        setNotice(list);
         setLoading(false);
         setActive("home");
       },
@@ -34,19 +35,18 @@ const News = ({ setActive, user }) => {
   if (loading) {
     return <Spinner />;
   }
-  console.log("news", news);
+  console.log("notice", notice);
 
   const handleDelete = async (id) => {
     if (window.confirm("정말 삭제하시겠습니까?")) {
       try {
         setLoading(true);
-        await deleteDoc(doc(db, "news", id));
+        await deleteDoc(doc(db, "notice", id));
       } catch (err) {
         console.log(err);
       }
     }
   };
-
   return (
     <div>
       <div className="relative">
@@ -62,11 +62,11 @@ const News = ({ setActive, user }) => {
             className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 
           font-black text-5xl text-[#333]"
           >
-            NEWS
+            CUSTOMER
             <div className="flex justify-center">
               <hr className="mt-5 mb-10 h-px border-2 w-1/3 bg-black border-black" />
             </div>
-            <span className="text-4xl">뉴스 및 보도자료</span>
+            <span className="text-4xl">Notice</span>
           </p>
         </div>
 
@@ -75,32 +75,41 @@ const News = ({ setActive, user }) => {
           <div className="pl-2"></div>
           <img src={rightarrow} className="pt-1 h-5 w-5" alt="rightarrow" />
           <div className="pl-2"></div>
-          <span className="font-bold">NEWS</span>
+          <span className="font-bold">CUSTOMER</span>
           <div className="pl-2"></div>
           <img src={rightarrow} className="pt-1 h-5 w-5" alt="rightarrow" />
           <div className="pl-2"></div>
-          <span className="font-bold">뉴스 및 보도자료</span>
+          <span className="font-bold">Notice</span>
         </div>
       </div>
 
       <div className="flex flex-rows-1 pb-40">
-        <div className="py-10 px-10 sm:px-20 w-full h-full">
+        <div className="px-10 sm:px-20 w-full h-full">
           {/* top */}
-          <div className="pb-10">
+          <div>
             <span className="text-black text-3xl sm:text-4xl font-black sm:font-black">
-              뉴스
+              공지사항
             </span>
             <hr className="my-10 h-px border-2 w-1/6 bg-black border-black" />
+            <br />
+            <br />
             <span className="text-[#000] text-base sm:text-2xl font-light">
-              “MCT의&nbsp;
-              <span className="font-bold">뉴스 및 언론보도</span>를 소개합니다.”
+              “MCT의
+              <span className="font-bold">&nbsp;새로운 소식</span>을
+              알려드립니다.”
             </span>
           </div>
-          <NewsSection news={news} user={user} handleDelete={handleDelete} />
+          {/* main content */}
+          <NoticeSection
+            notice={notice}
+            user={user}
+            handleDelete={handleDelete}
+          />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
 
-export default News;
+export default Notice;

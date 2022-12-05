@@ -45,20 +45,20 @@ const SlickSlider = () => (
                   <p className="text-sm sm:text-base">{item.text4}</p>
                 </div>
                 <div>
-                  <h1 className="font-black text-4xl md:text-5xl mb-2">
+                  <h1 className="font-black text-3xl md:text-5xl mb-2">
                     {item.text1}
                   </h1>
-                  <h1 className="font-black text-4xl md:text-5xl mb-2">
+                  <h1 className="font-black text-3xl md:text-5xl mb-2">
                     {item.text2}
                   </h1>
-                  <h1 className="font-black text-4xl md:text-5xl">
+                  <h1 className="font-black text-3xl md:text-5xl">
                     {item.text3}
                   </h1>
                 </div>
               </div>
               <img
                 src={item.url}
-                className="object-cover h-[500px] w-[400px] lg:h-full sm:w-full"
+                className="object-cover h-full w-full"
                 alt="MCT 메인 배너 사진 3가지"
               />
             </div>

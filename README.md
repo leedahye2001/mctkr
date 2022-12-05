@@ -1,1 +1,1 @@
-React와 Firebase를 
+React와 Firebase를 이용.

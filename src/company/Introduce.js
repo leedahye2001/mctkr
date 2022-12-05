@@ -25,7 +25,7 @@ class Introduce extends Component {
 
         <div className="flex flex-rows-1 ">
           {/* Main contect */}
-          <div className="px-10 sm:px-10 w-full h-full">
+          <div className="px-10 sm:px-20 w-full h-full">
             <span className="text-black text-3xl sm:text-4xl font-black sm:font-black">
               회사소개
             </span>
